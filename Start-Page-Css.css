@@ -1,1 +1,45 @@
-#CSS for Start-Page
+
+
+body {
+	
+	background-color: #5F5F5F;
+	background-image: url("streaks.jpg");
+	}
+
+
+
+.center{
+	
+		text-align: center;
+	position: fixed;
+    left: 50%;
+    top: 50%;	
+	height: 300px;
+	width: 900px;
+	padding: 10px;
+	margin: 0;
+	
+
+	
+	transform: translate(-50%,-50%);
+	
+	border: 5px solid #4f4f4f;
+	border-radius: 40px;
+	
+	background-color: #4d4d4d;
+}
+
+.linkslist ul{
+	padding:0px;
+	
+	position:relative;
+	left: 400px;
+	width:100px;
+	text-align: center;
+	background-color: brown;
+	
+}
+
+.linkslist ul:hover {
+	background-color: black;
+}
