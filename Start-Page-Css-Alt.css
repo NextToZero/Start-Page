@@ -14,10 +14,24 @@ body {
 
 .title{
 	
-	background-color: var(--mainBGC);
+	background-color: hsla(45, 0%, 35%, 0.75);
 	border: 2px solid black;
-	border-radius: 5px;
+	
 }
+
+.topBar{
+
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	border-bottom :5px solid black;
+	background-color: hsla(45, 0%, 10%, 0.95);
+	padding:0px;
+	margin-right:10px;
+	text-align: right;
+	
+}
+
 
 .MainList{
 	
@@ -32,6 +46,7 @@ body {
 	
 	
 	background-color: var(--mainBGC); 
+	box-shadow: 2px 2px black;
 }
 
 .links{
@@ -43,7 +58,15 @@ body {
 	font-family: "Impact", Charcoal, sans-serif;
 }
 
-.links ul{
+ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type:none;
+	
+}
+
+
+.links ul li{
 	height: 7%;
 	background-color:var(--mainBGC);
 	
@@ -55,7 +78,7 @@ body {
 	
 }
 
-.links ul:hover{
+.links ul li:hover{
 	
 	background-color:#AdAdAd;
 	

@@ -9,7 +9,23 @@
 	<head>
 	<!--<link rel="stylesheet" href="Start-Page-Css.css"> -->
 		<link rel="stylesheet" href="Start-Page-Css-Alt.css">
-	
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
 
 
 		
@@ -24,7 +40,7 @@
 
 		</title>
 	</head>
-	<body onload="BGImage()">
+	<body onload="BGImage(), startTime()">
 	
 			
 		<script>
@@ -60,7 +76,17 @@
 			document.body.style.backgroundImage = SelBG;
 			}
 		</script>
-		
+		<div class="topBar">
+			The Time Is:
+			
+			<div id="clock">
+			
+			
+			
+				
+			</div>
+	
+		</div>
 		<div class="MainBody">
 			<div class="MainList"> <!--Formerly Center-->
 			
@@ -68,23 +94,23 @@
 			<div class="title"><h1> Welcome to the <b> Internet!</b> </h1> </div>
 				<div class="links">
 					
-					
-						<ul id="gmail" onclick="location.href='https://mail.google.com/mail/u/0/#inbox';">
+					<ul>
+						<li id="gmail" onclick="location.href='https://mail.google.com/mail/u/0/#inbox';">
 						<a href="https://mail.google.com/mail/u/0/#inbox"> Gmail </a>
-						</ul>
-						<ul id="reddit" onclick="location.href='https://www.reddit.com/r/all/';">
+						</li>
+						<li id="reddit" onclick="location.href='https://www.reddit.com/r/all/';">
 						<a href="https://www.reddit.com/r/all/"> Reddit </a>
-						</ul>
-						<ul id="mytru" onclick="location.href='https://mytru.tru.ca';">
+						</li>
+						<li id="mytru" onclick="location.href='https://mytru.tru.ca';">
 						<a href="https://mytru.tru.ca"> MyTRU </a>
-						</ul>
-						<ul id="facebook"onclick="location.href='https://www.facebook.com';">
+						</li>
+						<li id="facebook"onclick="location.href='https://www.facebook.com';">
 						<a href="https://www.facebook.com"> Facebook </a>
-						</ul>
-						<ul id="maps"onclick="location.href='https://www.google.ca/maps';">
+						</li>
+						<li id="maps"onclick="location.href='https://www.google.ca/maps';">
 						<a href="https://www.google.ca/maps"> Maps </a>
-						</ul>
-					
+						</li>
+					</ul>
 				</div>
 			
 
