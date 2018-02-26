@@ -10,7 +10,7 @@ body {
 
 .center{
 	
-		text-align: center;
+	text-align: center;
 	position: fixed;
     left: 50%;
     top: 50%;	
@@ -26,7 +26,7 @@ body {
 	border: 5px solid #4f4f4f;
 	border-radius: 40px;
 	
-	background-color: #4d4d4d;
+	background-color: hsla(8, 0%, 56%, 0.24);
 }
 
 .linkslist ul{
@@ -36,10 +36,18 @@ body {
 	left: 400px;
 	width:100px;
 	text-align: center;
-	background-color: brown;
+	background-color: grey;
 	
 }
 
 .linkslist ul:hover {
-	background-color: black;
+	background-color: hsla(76, 100%, 42%, 0.21);
 }
+
+ul{
+	
+	border: 2px solid #000000;
+	border-radius:10px;
+	
+}
+
