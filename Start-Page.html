@@ -1,45 +1,96 @@
+
+
 <!DOCTYPE html>
+
+
+
+
 <html>
 	<head>
-	<link rel="stylesheet" href="Start-Page-Css.css">
+	<!--<link rel="stylesheet" href="Start-Page-Css.css"> -->
+		<link rel="stylesheet" href="Start-Page-Css-Alt.css">
+	
+
+
+		
+		
+		
 
 	
 		<title>
 		
-		Title1
+		Start Page
 
 
 		</title>
 	</head>
-	<body>
-		<div class="center">
+	<body onload="BGImage()">
+	
+			
+		<script>
+		function BGImage(){
+			var BG = ['url("images/00.jpg")',
+						'url("images/01.jpg")',
+						'url("images/02.jpg")',
+						'url("images/03.jpg")',
+						'url("images/04.jpg")',
+						'url("images/05.jpg")',
+						'url("images/06.jpg")',
+						'url("images/07.jpg")',
+						'url("images/08.jpg")',
+						'url("images/09.jpg")',
+						'url("images/010.jpg")',
+						'url("images/011.jpg")',
+						'url("images/012.jpg")',
+						'url("images/013.jpg")',
+						'url("images/014.jpg")',
+						'url("images/015.jpg")',
+						'url("images/016.jpg")',
+						'url("images/017.jpg")',
+						'url("images/018.jpg")',
+						'url("images/019.jpg")',
+						'url("images/020.jpg")',
+						'url("images/021.jpg")',
+						'url("images/022.jpg")',
+						'url("images/023.jpg")',
+						'url("images/024.jpg")',
+						'url("images/025.jpg")'];
+			var i = Math.floor(Math.random() * BG.length);
+			var SelBG = BG[i];
+			document.body.style.backgroundImage = SelBG;
+			}
+		</script>
 		
-
-		<h1> Welcome to the <b> Internet!</b> </h1>
-			<div class="links">
-				
-				<div class="linkslist">
-					<ul id="gmail">
-					Gmail
-					</ul>
-					<ul id="reddit">
-					Reddit
-					</ul>
-					<ul id="mytru">
-					MyTRU
-					</ul>
-					<ul id="facebook">
-					Facebook
-					</ul>
-					<ul id="maps">
-					Maps
-					</ul>
-				</div>
-			</div>
-		
-
+		<div class="MainBody">
+			<div class="MainList"> <!--Formerly Center-->
 			
 
+			<div class="title"><h1> Welcome to the <b> Internet!</b> </h1> </div>
+				<div class="links">
+					
+					
+						<ul id="gmail" onclick="location.href='https://mail.google.com/mail/u/0/#inbox';">
+						<a href="https://mail.google.com/mail/u/0/#inbox"> Gmail </a>
+						</ul>
+						<ul id="reddit" onclick="location.href='https://www.reddit.com/r/all/';">
+						<a href="https://www.reddit.com/r/all/"> Reddit </a>
+						</ul>
+						<ul id="mytru" onclick="location.href='https://mytru.tru.ca';">
+						<a href="https://mytru.tru.ca"> MyTRU </a>
+						</ul>
+						<ul id="facebook"onclick="location.href='https://www.facebook.com';">
+						<a href="https://www.facebook.com"> Facebook </a>
+						</ul>
+						<ul id="maps"onclick="location.href='https://www.google.ca/maps';">
+						<a href="https://www.google.ca/maps"> Maps </a>
+						</ul>
+					
+				</div>
+			
+
+				
+
+			</div>
 		</div>
 	</body>
 
